@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class FaultyProblem7 {
     public static int binarySearch(int element, int... array) {
      //Utils.killMeIfIGetStuck();
-    //	Arrays.sort(array);
+    //	Arrays.sort(array); TESTING IT
     	
         int low = 0;
         int high = array.length - 1;
