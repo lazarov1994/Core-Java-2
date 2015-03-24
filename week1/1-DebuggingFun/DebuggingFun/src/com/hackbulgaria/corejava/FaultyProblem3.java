@@ -2,15 +2,19 @@ package com.hackbulgaria.corejava;
 
 public class FaultyProblem3 {
     
-    public String reverseEveryWordInString(String sentence){
+    public static String reverseEveryWordInString(String sentence){
         String[] words = sentence.split(" ");
-        for (String word: words){
-            sentence = sentence.replace(word, reverse(word));
+        for (int i = 0 ; i < words.length; i++){
+            sentence = sentence.replaceFirst(words[i], (String) reverse(words[i]));
         }
         return sentence;
     }
 
-    private CharSequence reverse(String word) {
+    private static CharSequence reverse(String word) {
         return Utils.reverseMe(word);
     }
+    public static void main(String[] args) {
+    	System.out.println(reverseEveryWordInString(" this is siht I we reverse"));
+    	
+	}
 }

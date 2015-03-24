@@ -2,6 +2,9 @@ package com.hackbulgaria.corejava;
 
 public class FaultyProblem6 {
     public static long pow(int a, int b) {
+    	if(b==0){
+    		return 1;
+    	}
         if (b == 1){
             return a;
         }
@@ -11,5 +14,9 @@ public class FaultyProblem6 {
             long power = pow(a, b / 2);
             return power * power;
         }
+    	
     }
+    public static void main(String[] args) {
+		System.out.println(pow(4, 0));
+	}
 }

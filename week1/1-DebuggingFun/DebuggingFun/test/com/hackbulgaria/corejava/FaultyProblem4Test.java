@@ -21,7 +21,7 @@ public class FaultyProblem4Test {
     @Test
     public void testAgainFloats(){
         assertTrue(FaultyProblem4.areEqual(0/6, 0/5));
-        assertTrue(FaultyProblem4.areEqual(401/399, 1/(399/401)));
+        assertTrue(FaultyProblem4.areEqual((401/399), 1/(399/401F)));
     }
 
     @Test
@@ -30,7 +30,7 @@ public class FaultyProblem4Test {
         assertTrue(FaultyProblem4.areEqual(0, 0));
         assertTrue(FaultyProblem4.areEqual(500, 500));
 
-        // Защо са верни горните, а този тест фейлва? ^^^
+        // Ð—Ð°Ñ‰Ð¾ Ñ�Ð° Ð²ÐµÑ€Ð½Ð¸ Ð³Ð¾Ñ€Ð½Ð¸Ñ‚Ðµ, Ð° Ñ‚Ð¾Ð·Ð¸ Ñ‚ÐµÑ�Ñ‚ Ñ„ÐµÐ¹Ð»Ð²Ð°? ^^^
         assertTrue(FaultyProblem4.areEqual(new Integer(511), (Integer) 511));
     }
     
