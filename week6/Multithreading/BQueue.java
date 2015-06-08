@@ -48,7 +48,7 @@ public class BQueue {
 		
 		while(true){
 			Integer puted = random.nextInt(100);
-			queue.put(puted); // Put is w8ing while item is taken of the QUEUE, if it is full
+			queue.put(puted); // Put is w8ing while item is taken of the QUEUE, if it is full.
 			System.out.println("The putted value is: " + puted);
 		}
 	}
